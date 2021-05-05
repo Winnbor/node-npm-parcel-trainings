@@ -1,0 +1,25 @@
+{
+  "name": "node-npm-parcel-trainings",
+  "version": "1.0.0",
+  "description": "Parcel tuning",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Winnbor/node-npm-parcel-trainings.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Winnbor/node-npm-parcel-trainings/issues"
+  },
+  "homepage": "https://github.com/Winnbor/node-npm-parcel-trainings#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.12"
+  }
+}
