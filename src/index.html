@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="./sass/main.scss" />
-    <title>Parcel v1 tuning</title>
+
+    <title>Game</title>
   </head>
   <body>
-    <main>
-      <div class="container">
-        <h1>Hello World!!!</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-          facere enim, quia autem sunt ipsum cupiditate quo animi corrupti
-          tempore adipisci harum sequi modi iusto placeat! Nostrum quasi ducimus
-          itaque!
-        </p>
+    <div id="controls" class="container controls-hub">
+      <div>
+        <input type="number" min="10" max="50" step="1" />
+        <button type="button" data-action="render">Create</button>
       </div>
-    </main>
+
+      <button type="button" data-action="remove-first">Remove first</button>
+      <button type="button" data-action="remove-last">Remove last</button>
+      <button type="button" data-action="destroy">Clear all</button>
+    </div>
+
+    <div class="boxes-holder" id="boxes"></div>
+
     <script src="./index.js"></script>
   </body>
 </html>
