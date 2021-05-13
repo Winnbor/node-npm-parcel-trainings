@@ -27,6 +27,8 @@ const createDiv = i => {
   divEl.style.width = `${(i - 1) * 10 + 30}px`;
   divEl.style.height = `${(i - 1) * 10 + 30}px`;
   divEl.style.background = `${randomizeColor()}`;
+  divEl.style.pointerEvents = 'none';
+
   return divEl;
 };
 
@@ -98,3 +100,13 @@ removeLastBtnRef.addEventListener('click', () => {
 clearBtnRef.addEventListener('click', () => {
   destroyBoxes();
 });
+
+console.log(boxHolderRef.classList.value === 'boxes-holder');
+
+boxHolderRef.addEventListener('click', onClickRemoveCircle);
+
+function onClickRemoveCircle() {
+  if (event.target.classList.value === 'div-wrapper') {
+    event.target.remove();
+  }
+}
