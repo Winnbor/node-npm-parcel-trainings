@@ -1,2 +1,2 @@
-# node-npm-parcel-trainings
-Parcel tuning
+## Just a little game :)
+My first steps in JS
